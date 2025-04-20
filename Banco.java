@@ -14,13 +14,16 @@ public class Banco {
     System.out.println("---------------------------------");
 
     String menu = """
-            \n------ Menu ------
+    \n
+            ------ Menu ------
             1 - Consultar saldo
             2 - Transferir valor
             3 - Receber valor
             4 - Sair
+            --------------------
             Digite o que deseja:
            """;
+   
     Scanner leitura = new Scanner(System.in);
 
     while (opcao != 4){
@@ -28,23 +31,23 @@ public class Banco {
         opcao = leitura.nextInt();
 
         if (opcao == 1){
-            System.out.println("O saldo atualizado é " + saldo);
+            System.out.println("\nO saldo é R$ " + saldo);
         } else if (opcao == 2){
-            System.out.println("Qual o valor que deseja trasferir?");
+            System.out.println("\nQual o valor que deseja trasferir? Use vírgula");
             double valor = leitura.nextDouble();
             if(valor > saldo){
-                System.out.println("Não há saldo para realizar a transferência");
+                System.out.println("\nNão há saldo para realizar a transferência");
             } else {
                 saldo -= valor;
-                System.out.println("Novo saldo: " + saldo);
+                System.out.println("\nNovo saldo R$ " + saldo);
             }
              } else if (opcao == 3){
-            System.out.println("Valor recebido: ");
+            System.out.println("\nValor recebido R$ ");
             double valor = leitura.nextDouble();
             saldo += valor;
-            System.out.println("Novo saldo: " + saldo);
+            System.out.println("\nNovo saldo R$ " + saldo);
           } else if (opcao != 4) {
-            System.out.println("Opção inválida!");
+            System.out.println("\nOpção inválida!");
         }
     }
     }
