@@ -4,10 +4,10 @@ Este projeto é um simples simulador de conta bancária desenvolvido em Java. El
 ## 🧾 Descrição
 O programa inicia exibindo as informações da conta (nome do titular, tipo de conta e saldo inicial). Em seguida, apresenta um menu com as seguintes opções:
 
-- 1. Consultar saldo
-- 2. Transferir valor
-- 3. Receber valor
-- 4. Sair
+1 - Consultar saldo
+2 - Transferir valor
+3 - Receber valor
+4 - Sair
 
 As opções são executadas de acordo com a escolha do usuário, e o saldo é atualizado em tempo real. O loop continua até que o usuário escolha sair (opção 4).
 
